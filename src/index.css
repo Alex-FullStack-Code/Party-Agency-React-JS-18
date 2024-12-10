@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+
+:root {
+  --clr-brown: #d0a977;
+  --clr-ligter-brown: #e3c7a2;
+
+  --trans: all 400ms ease;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Box sizing border-box by default */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles from UL, OL elements */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove anchor text decoration */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove default focus styles */
+:focus {
+  outline: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+/* Set default font and background color */
+body {
+  min-height: 100vh;
+  background: url('./assets/background.jpg');
+  /* background-color: #f3f3f3; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: var(--container-width-lg);
+  background-color: transparent;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  min-height: 100vh;
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--color-primary);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--clr-brown);
+  transition: var(--transition);
+  align-self: center;
+}
+
+.btn:hover {
+  background: var(--clr-ligter-brown);
+  color: var(--color-bg);
+  border-color: transparent;
+}
+
+.green__btn {
+  padding: 1rem 4rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #a4e7c9;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.green__btn:hover {
+  background-color: #4c4c4c;
+}
+
+.hidden_content {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.hidden__btn {
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: var(--clr-brown);
+}
+
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 2rem;
+}
+
+.text_handler {
+  height: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: var(--container-width-md);
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: var(--container-width-sm);
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+  
+  h2 {
+    font-size: 3rem;
+  }
+  
+  h3 {
+    font-size: 2rem;
+  }
+  
+  h4 {
+    font-size: 1rem;
+  }
+  
+  h5 {
+    font-size: 0.5rem;
+  }
+
+  
+}
